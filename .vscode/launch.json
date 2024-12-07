@@ -10,6 +10,7 @@
 			"request": "launch",
 			// program - an absolute path to the Node.js program to debug.
 			"program": "${workspaceFolder}/packages/markuplint/bin/markuplint.mjs",
+			"args": ["test.html"],
 			// break immediately when the program launches
 			// "stopOnEntry": true,
 			//
