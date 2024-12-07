@@ -24,7 +24,7 @@
 			// https://code.visualstudio.com/docs/typescript/typescript-debugging
 			// If VS Code can't find the generated source, you may see a message like:
 			//   Uncaught TypeError TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts"
-			"outFiles": ["${workspaceFolder}/packages/markuplint/lib/**/*.{js,mjs,cjs}"]
+			"outFiles": ["${workspaceFolder}/packages/**/*.{js,mjs,cjs}"]
 			// "preLaunchTask": "${defaultBuildTask}"
 		},
 		{
