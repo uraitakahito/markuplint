@@ -5,6 +5,7 @@
 		"paths": {
 			"@markuplint/*": ["./packages/@markuplint/*/src"],
 			"*": ["./packages/*/src"]
-		}
+		},
+		"sourceMap": true
 	}
 }
