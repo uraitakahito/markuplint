@@ -5,6 +5,50 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"name": "Run markuplint/bin/markuplint.mjs",
+			"type": "node",
+			"request": "launch",
+			// program - an absolute path to the Node.js program to debug.
+			"program": "${workspaceFolder}/packages/markuplint/bin/markuplint.mjs",
+			// break immediately when the program launches
+			// "stopOnEntry": true,
+			//
+			// Mapping the output location
+			//
+			// If generated (transpiled) JavaScript files do not live next to their source,
+			// you can help the VS Code debugger locate them by setting the `outFiles`
+			// attribute in the launch configuration.
+			// Whenever you set a breakpoint in the original source, VS Code tries to find
+			// the generated source by searching the files specified by glob patterns in `outFiles`.
+			// https://code.visualstudio.com/docs/typescript/typescript-debugging
+			// If VS Code can't find the generated source, you may see a message like:
+			//   Uncaught TypeError TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts"
+			"outFiles": ["${workspaceFolder}/packages/markuplint/lib/**/*.{js,mjs,cjs}"]
+			// "preLaunchTask": "${defaultBuildTask}"
+		},
+		{
+			"name": "Run selected TypeScript file",
+			"type": "node",
+			"request": "launch",
+			// program - an absolute path to the Node.js program to debug.
+			"program": "${file}",
+			// break immediately when the program launches
+			"stopOnEntry": true,
+			//
+			// Mapping the output location
+			//
+			// If generated (transpiled) JavaScript files do not live next to their source,
+			// you can help the VS Code debugger locate them by setting the `outFiles`
+			// attribute in the launch configuration.
+			// Whenever you set a breakpoint in the original source, VS Code tries to find
+			// the generated source by searching the files specified by glob patterns in `outFiles`.
+			// https://code.visualstudio.com/docs/typescript/typescript-debugging
+			// If VS Code can't find the generated source, you may see a message like:
+			//   Uncaught TypeError TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts"
+			"outFiles": ["${workspaceFolder}/packages/markuplint/lib/**/*.{js,mjs,cjs}"],
+			"preLaunchTask": "${defaultBuildTask}"
+		},
+		{
 			"name": "VSCode Markuplint Extension",
 			"type": "extensionHost",
 			"request": "launch",

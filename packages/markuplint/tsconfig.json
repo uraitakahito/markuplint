@@ -3,7 +3,9 @@
 	"compilerOptions": {
 		"composite": true,
 
-		"resolveJsonModule": true
+		"resolveJsonModule": true,
+
+		"sourceMap": true
 	},
 	"references": [
 		{

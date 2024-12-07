@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compile TypeScript",
+			"type": "npm",
+			"script": "build",
+			// The VS Code task system can also detect build issues through a problem matcher.
+			// https://code.visualstudio.com/docs/editor/tasks#_defining-a-problem-matcher
+			"problemMatcher": ["$tsc"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
